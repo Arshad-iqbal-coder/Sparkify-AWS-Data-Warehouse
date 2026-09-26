@@ -1,4 +1,4 @@
-# Sparkify Data Warehouse Project
+# Sparkify AWS Data Warehouse – S3 to Redshift ETL
 
 ## Project Overview
 
@@ -221,11 +221,6 @@ Contains all SQL queries used in the project including:
 
 ## dwh.cfg
 Stores Redshift cluster configuration, database credentials, IAM role ARN, and S3 paths.
-
----
-
-## analytics.py
-Runs analytical queries on the warehouse for validation and business insights.
 
 ---
 
