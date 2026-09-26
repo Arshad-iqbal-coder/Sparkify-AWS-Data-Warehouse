@@ -31,7 +31,35 @@ The final data warehouse allows Sparkify's analytics team to analyze:
 
 The pipeline follows the architecture below:
 
+```text
+                    Amazon S3
+                       |
+          +------------+------------+
+          |                         |
+     Song Dataset              Log Dataset
+          |                         |
+          +------------+------------+
+                       |
+                       v
+              Redshift Staging
+              +--------------+
+              | staging_songs|
+              | staging_events|
+              +--------------+
+                       |
+                       | SQL Transformations
+                       v
+              Redshift Data Warehouse
+                       |
+              +--------+--------+
+              |                 |
+          Fact Table       Dimension Tables
+              |                 |
+          songplays       users / songs
+                          artists / time
+```
 
+---
 
 ## Technologies Used
 
