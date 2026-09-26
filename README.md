@@ -130,6 +130,8 @@ s3://udacity-dend/log_json_path.json
 
 A **star schema** was implemented for song-play analysis.
 
+![img alt](https://github.com/Arshad-iqbal-coder/Redshift-Data-Warehouse-/blob/90200549dab0c6da818b1e4300a7fd9b2d15bdb2/docs/Star%20Schema)
+
 The warehouse contains:
 
 - 1 fact table
